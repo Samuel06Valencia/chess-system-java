@@ -1,10 +1,11 @@
-package boardgame; //Pacote correspondente a camada de tabuleiro.
+package boardgame; //Pacote correspondente a camada de tabuleiro do projeto.
 
 public class Position {
+	//Atributos
 	private int row;
 	private int column;
 	
-	
+	//Construtores
 	public Position() {
 		super();
 	}
@@ -12,6 +13,8 @@ public class Position {
 		this.row = row;
 		this.column = column;
 	}
+	
+	//Getters and Setters - Conceito Encapsulamento
 	public int getRow() {
 		return row;
 	}
