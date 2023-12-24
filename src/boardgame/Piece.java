@@ -20,7 +20,7 @@ public class Piece {
 	
 	//Getters and Setters - Conceito Encapsulamento
 
-	protected Board getBoard() { //protected, pois somente classes e subclasses dentro do mesmo pacote, poderão acessar o tabuleiro de uma peça
+	protected Board getBoard() { //protected, pois somente classes e subclasses dentro do mesmo pacote, poderão acessar o tabuleiro de uma peça.
 		return board; //Apenas visualização.
 	}
 

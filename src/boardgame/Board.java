@@ -20,7 +20,7 @@ public class Board {
 
 	//Getters and setters:
 	
-	//Não possui get e set de "pieces",pois há métodos na classe para retornar uma peça por vez,dado uma linha e uma coluna. 
+	//Não possui get e set de "pieces",pois não irá retornar a matriz inteira,pois à métodos na classe para retornar uma peça por vez,dado uma linha e uma coluna, ou então por uma posição. 
 	public int getRows() {
 		return rows;
 	}
@@ -37,6 +37,11 @@ public class Board {
 		this.columns = columns;
 	}
 	
-	
-	
+	//Métodos:
+	public Piece piece(int row, int column) {
+		return pieces[row][column]; //retorna uma peça,dada uma linha(row) e uma coluna(column).
+	}
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()]; //Sobrecarga, retorna a peça pela posição(position).
+	}
 }
