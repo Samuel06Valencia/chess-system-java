@@ -44,4 +44,9 @@ public class Board {
 	public Piece piece(Position position) {
 		return pieces[position.getRow()][position.getColumn()]; //Sobrecarga, retorna a peça pela posição(position).
 	}
+	//O método PlacePiece vai ser responsável por colocar na posição, recebendo como parâmetros uma peça e uma posição.
+	public void placePiece(Piece piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;
+	}
 }
